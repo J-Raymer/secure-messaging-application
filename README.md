@@ -30,19 +30,19 @@ We are creating a secure messaging application (SM) in python with the following
 ## Diagrams
 
 ### Signup
-![Client signs up with Server]()
+![Client signs up with Server](https://github.com/J-Raymer/secure-messaging-application/blob/master/Diagrams/DataFlowSM%20-%20ClientSignUp.jpg)
 
 ### Login
-![Client logs in with Server]()
+![Client logs in with Server](https://github.com/J-Raymer/secure-messaging-application/blob/master/Diagrams/DataFlowSM%20-%20ClientLogin.jpg)
 
 ### Client's messages being stored in server DB
-![Storing Client msg in DB Diagram]()
+![Storing Client msg in DB Diagram](https://github.com/J-Raymer/secure-messaging-application/blob/master/Diagrams/DataFlowSM%20-%20DBStoreClientMsg.jpg)
 
 ### Client's messages being accessed from server DB
-![Accessing Client msg from DB Diagram]()
+![Accessing Client msg from DB Diagram](https://github.com/J-Raymer/secure-messaging-application/blob/master/Diagrams/DataFlowSM%20-%20ClientDeletesMsg.jpg)
 
 ### Deleting message
-![Client deletes their messages from server]()
+![Client deletes their messages from server](https://github.com/J-Raymer/secure-messaging-application/blob/master/Diagrams/DataFlowSM%20-%20ClientDeletesMsg.jpg)
 
 ## Database
 The database for this prototype is implemented using SQLite3. SQLite3 is a lightweight database that also supports the use of SQL. The database including all data is saved locally as DB/message_app.db. Removing all data for a fresh start can easily be done by deleting message_app.db manually or automating a script to call teardown_db() from DB/database.py. The database file is generated the first time server.py and client.py are run. All functions that work directly with the database are located in DB/database.py. 
